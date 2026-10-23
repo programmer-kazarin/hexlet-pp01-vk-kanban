@@ -22,3 +22,47 @@
 * Realtime‑обновления через WebSocket: перемещения и комментарии.
 * Поиск по карточкам.
 * Шаблоны досок.
+
+# Setup
+
+Команды запускаются из корня проекта. Сначала база, затем бэкенд: он подключается к PostgreSQL при старте.
+
+## База данных
+
+```bash
+make db-start
+```
+
+Остановка:
+
+```bash
+make db-stop
+```
+
+## Frontend
+
+Установка зависимостей:
+
+```bash
+cd frontend && npm install
+```
+
+Запуск:
+
+```bash
+make front-start
+```
+
+## Backend
+
+Сборка:
+
+```bash
+make back-build
+```
+
+Запуск:
+
+```bash
+make back-start
+```
